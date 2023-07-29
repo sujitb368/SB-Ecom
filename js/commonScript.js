@@ -3,7 +3,9 @@
 // baseURL
 // if base url is not same as current then change base url with current
 // here i use live server extension in vs code
-const baseURL = "http://127.0.0.1:5500";
+// const baseURL = "http://127.0.0.1:5500";
+// production server
+const baseURL = "https://github.com/sujitb368/SB-Ecom";
 
 const showCartItems = () => {
   try {
