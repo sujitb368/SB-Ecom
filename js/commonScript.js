@@ -32,7 +32,7 @@ const getHeader = async (divId) => {
     document.getElementById("logo");
     setTimeout(() => {
       showCartItems();
-    }, 500);
+    }, 2000);
     return true;
   } catch (error) {
     console.log(error);
