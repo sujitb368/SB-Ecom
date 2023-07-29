@@ -5,7 +5,7 @@
 // here i use live server extension in vs code
 // const baseURL = "http://127.0.0.1:5500";
 // production server
-const baseURL = "https://github.com/sujitb368/SB-Ecom";
+const baseURL = "https://sujitb368.github.io/SB-Ecom";
 
 const showCartItems = () => {
   try {
@@ -64,7 +64,7 @@ const nextPage = (event, nextPage) => {
   event.preventDefault();
   try {
     //navigate to the next page
-    const basePath = window.location.origin + "/" + nextPage;
+    const basePath = window.location.origin + "/SB-Ecom/" + nextPage;
     window.location.href = basePath;
   } catch (error) {
     console.log(error);
