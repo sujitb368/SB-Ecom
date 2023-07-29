@@ -71,7 +71,7 @@ const nextPage = (event, nextPage) => {
 // function to set the logo image in navbar
 const loadLogo = (id, path) => {
   const logo = document.getElementById(id);
-  logo.src = window.location.origin + "/" + path;
+  logo.src = window.location.origin + "/SB-Ecom/" + path;
 };
 
 //to disable dropdown on click in large screens
