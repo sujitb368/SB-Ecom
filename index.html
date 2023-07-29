@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommers app</title>
+
+
+    <!-- bootstrap css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- header section -->
+    <div id="header" class="container-fluid px-0"></div>
+    <!-- main section -->
+
+    <main>
+        <div class="cotainer-fluid">
+            <!-- add image as background -->
+            <div class="banner px-3 text-center">
+                <h1>
+                    <img src="./logo1.png" alt="logo">
+                </h1>
+                <p class="fs-3"> Unbox happiness at SB Ecom </p>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-light p-3">
+            <h2 class="fw-bolder text-center mt-5 mb-4">Featured Products</h2>
+            <!-- large screen -->
+            <div class="container mb-5 d-none d-lg-block">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex">
+                                <div id="large_p_1" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Summar dress</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(large_p_1)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_2" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1560243563-062bfc001d68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Jeans</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(large_p_2)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_3" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Tops</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(large_p_3)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_4" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">T-Shirts</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(large_p_4)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_5" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://plus.unsplash.com/premium_photo-1679056835084-7f21e64a3402?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Warm Shirts</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(large_p_5)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <div id="large_p_6" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">D-Jeans</h5>
+                                        <h6 class="card-title product-price">100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(large_p_6)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_7" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Smart White</h5>
+                                        <h6 class="card-title product-price">100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(large_p_7)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_8" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">SS Combo</h5>
+                                        <h6 class="card-title product-price">100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(large_p_8)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_9" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=411&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Round neck</h5>
+                                        <h6 class="card-title product-price">100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(large_p_9)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_10" class="card me-3 text-center" style="width: 18rem;">
+                                    <img src="https://images.pexels.com/photos/5710155/pexels-photo-5710155.jpeg?auto=compress&cs=tinysrgb"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Collection</h5>
+                                        <h6 class="card-title product-price">100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(large_p_10)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile screen -->
+            <div class="container d-md-none">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="carouselMobile" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="d-flex">
+                                        <div id="mob_p_01" class="card me-3  text-center" style="width: 100%;">
+                                            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80"
+                                                class="d-block card-img-top img-100" alt="product image">
+                                            <div class="card-body">
+                                                <h5 class="card-title product-title">Summar dress</h5>
+                                                <h6 class="card-title product-price">&#8377; 100</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make
+                                                    up
+                                                    the
+                                                    bulk of the card's content.</p>
+                                                <button onclick="addToCart(mob_p_01)" class="btn btn-primary">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="d-flex">
+                                        <div id="mob_p_02" class="card me-3  text-center" style="width: 100%;">
+                                            <img src="https://images.unsplash.com/photo-1560243563-062bfc001d68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                                class="d-block card-img-top img-100" alt="product image">
+                                            <div class="card-body">
+                                                <h5 class="card-title product-title">Jeans</h5>
+                                                <h6 class="card-title product-price">&#8377; 100</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make
+                                                    up
+                                                    the
+                                                    bulk of the card's content.</p>
+                                                <button onclick="addToCart(mob_p_02)" class="btn btn-primary">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="d-flex">
+                                        <div id="mob_p_03" class="card me-3  text-center" style="width: 100%;">
+                                            <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                                class="d-block card-img-top img-100" alt="product image">
+                                            <div class="card-body">
+                                                <h5 class="card-title product-title">Tops</h5>
+                                                <h6 class="card-title product-price">&#8377; 100</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make
+                                                    up
+                                                    the
+                                                    bulk of the card's content.</p>
+                                                <button onclick="addToCart(mob_p_03)" class="btn btn-primary">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="d-flex">
+                                        <div id="mob_p_04" class="card me-3  text-center" style="width: 100%;">
+                                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                                                class="d-block card-img-top img-100" alt="product image">
+                                            <div class="card-body">
+                                                <h5 class="card-title product-title">T-Shirts</h5>
+                                                <h6 class="card-title product-price">&#8377; 100</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make
+                                                    up
+                                                    the
+                                                    bulk of the card's content.</p>
+                                                <button onclick="addToCart(mob_p_04)" class="btn btn-primary">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="d-flex">
+                                        <div id="mob_p_05" class="card me-3  text-center" style="width: 100%;">
+                                            <img src="https://plus.unsplash.com/premium_photo-1679056835084-7f21e64a3402?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                class="d-block card-img-top img-100" alt="product image">
+                                            <div class="card-body">
+                                                <h5 class="card-title product-title">Warm Shirts</h5>
+                                                <h6 class="card-title product-price">&#8377; 100</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make
+                                                    up
+                                                    the
+                                                    bulk of the card's content.</p>
+                                                <button onclick="addToCart(mob_p_05)" class="btn btn-primary">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="d-flex">
+                                        <div id="mob_p_6" class="card me-3  text-center" style="width: 100%;">
+                                            <img src="https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                                class="d-block card-img-top img-100" alt="product image">
+                                            <div class="card-body">
+                                                <h5 class="card-title product-title">D-Jeans</h5>
+                                                <h6 class="card-title product-price">100</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make
+                                                    up
+                                                    the
+                                                    bulk of the card's content.</p>
+                                                <button onclick="addToCart(mob_p_6)" class="btn btn-primary">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- tab screen -->
+            <div class="container mb-5 d-none d-md-block d-lg-none">
+                <div id="carouselTab" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+
+                                <div id="tab_p_01" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Summar dress</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(tab_p_01)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="tab_p_02" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1560243563-062bfc001d68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Jeans</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(tab_p_02)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div id="tab_p_03" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Tops</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(tab_p_03)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="tab_p_04" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">T-Shirts</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(tab_p_04)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div id="tab_p_05" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://plus.unsplash.com/premium_photo-1679056835084-7f21e64a3402?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Warm Shirts</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(tab_p_05)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="tab_p_6" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">D-Jeans</h5>
+                                        <h6 class="card-title product-price">100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(tab_p_6)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div id="tab_p_7" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Smart White</h5>
+                                        <h6 class="card-title product-price">100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(tab_p_7)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="tab_p_8" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">SS Combo</h5>
+                                        <h6 class="card-title product-price">100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(tab_p_8)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+
+                                <div id="tab_p_9" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=411&q=80"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Round neck</h5>
+                                        <h6 class="card-title product-price">100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(tab_p_9)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="tab_p_10" class="card me-3 text-center" style="width: 18rem;">
+                                    <img src="https://images.pexels.com/photos/5710155/pexels-photo-5710155.jpeg?auto=compress&cs=tinysrgb"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">Collection</h5>
+                                        <h6 class="card-title product-price">100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <button onclick="addToCart(tab_p_10)" class="btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTab"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTab"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </main>
+
+
+
+    <div class="container-fluid row bg-dark text-white  bottom-0 text-center m-0" id="footer"></div>
+
+
+    <!-- bootstrap js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/00ae993e42.js" crossorigin="anonymous"></script>
+
+    <!--include commonScript.js  file -->
+    <script src="js/commonScript.js"></script>
+
+    <!-- script for this page -->
+    <script>
+        //get header and footer
+        getHeader('header');
+        getFooter('footer');
+
+        // add to cart logic
+        // empty cart    
+        let cart = [];
+        // function to add, to cart
+        const addToCart = (card) => {
+            console.log(card)
+            try {
+                //get img of current clicked card
+                const img = card.querySelector('img');
+                // get the src of the product image
+                const imgSrc = img.src;
+                //get the title of the product 
+                const title = card.querySelector('.product-title').textContent;
+                //get the price of the product
+                const price = card.querySelector('.product-price').textContent;
+                // product info to store in and will be used to show in cart page
+                const product = {
+                    img: imgSrc,
+                    title: title,
+                    price: price,
+                    cartId: card.id
+                }
+                //get localStorages cart
+                const localStorages = JSON.parse(localStorage.getItem('cart'))
+                if (localStorages && localStorages.length > 0) {
+                    //copy all elements of localStorages to cart array
+                    cart = [...localStorages];
+                    // push product to cart array 
+                    cart.push(product);
+
+                } else {
+                    // if cart is empty | no product added before
+                    cart.push(product)
+                }
+
+                //show cart's items count in navbar
+                document.getElementById('cart').innerText = cart.length
+                //set to local storage
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+            } catch (error) {
+                console.log('Error:', error)
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
