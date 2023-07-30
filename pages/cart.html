@@ -91,7 +91,7 @@
 
     <script src="https://kit.fontawesome.com/00ae993e42.js" crossorigin="anonymous"></script>
 
-    <!--include commonScript.js  file -->
+    <!--include commonScript.js  file for local development -->
     <!-- <script src="../../js/commonScript.js"></script> -->
 
     <!-- commonjs file for production  -->
@@ -156,23 +156,23 @@
 
         //get product count
         // get from localStorage
-        const cart = JSON.parse(localStorage.getItem('cart'));
+        const localCart = JSON.parse(localStorage.getItem('cart'));
 
-        if (cart !== null) {
+        if (localCart !== null) {
             const imageContainer = document.getElementById('imageContainer');
             const cartLeft = document.getElementById('cartLeft');
             let cartLeftHtml = ''
-            for (const item in cart) {
+            for (const item in localCart) {
                 cartLeftHtml += `
                         <!-- image -->
                         <div id="imageContainer" class="col-md-4 mb-2">
                             <!-- here will come image of cart items -->
-                            <img src="${cart[item].img}" class="w-100 img-100" alt="${cart[item].title}">
+                            <img src="${localCart[item].img}" class="w-100 img-100" alt="${localCart[item].title}">
                         </div>
                         <!-- titel price and delete -->
                         <div id="deleteContainer" class="col-md-4 mb-2 text-center">
-                            <h6 class="fs-6">${cart[item].title}</h6>
-                            <p id='itemPrice${item}'>${cart[item].price ? cart[item].price : '00'}</p>
+                            <h6 class="fs-6">${localCart[item].title}</h6>
+                            <p id='itemPrice${item}'>${localCart[item].price ? localCart[item].price : '00'}</p>
 
                             <button class="btn btn-danger">
                                 <i onclick="deleteItem(item${item})" class="fa-solid fa-trash "></i>
