@@ -85,3 +85,46 @@ const disableClick = () => {
     }
   }, 250);
 };
+
+// add to cart logic
+// empty cart
+let cart = [];
+// function to add, to cart
+const addToCart = (card) => {
+  console.log(card);
+  try {
+    //get img of current clicked card
+    const img = card.querySelector("img");
+    // get the src of the product image
+    const imgSrc = img.src;
+    //get the title of the product
+    const title = card.querySelector(".product-title").textContent;
+    //get the price of the product
+    const price = card.querySelector(".product-price").textContent;
+    // product info to store in and will be used to show in cart page
+    const product = {
+      img: imgSrc,
+      title: title,
+      price: price,
+      cartId: card.id,
+    };
+    //get localStorages cart
+    const localStorages = JSON.parse(localStorage.getItem("cart"));
+    if (localStorages && localStorages.length > 0) {
+      //copy all elements of localStorages to cart array
+      cart = [...localStorages];
+      // push product to cart array
+      cart.push(product);
+    } else {
+      // if cart is empty | no product added before
+      cart.push(product);
+    }
+
+    //show cart's items count in navbar
+    document.getElementById("cart").innerText = cart.length;
+    //set to local storage
+    localStorage.setItem("cart", JSON.stringify(cart));
+  } catch (error) {
+    console.log("Error:", error);
+  }
+};
