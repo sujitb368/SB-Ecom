@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids</title>
+
+
+    <!-- bootstrap css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <div id="header" class="container-fluid px-0"></div>
+    <!-- main section -->
+    <main id="main" class="container-fluid px-0 mt-2">
+        <div class="container-fluid bg-light p-3">
+            <h2 class="fw-bolder text-center mt-5 mb-4">Featured Products</h2>
+
+
+            <!-- large screen -->
+            <div class="container mb-5 d-none d-lg-block">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex">
+                                <div id="large_p_1" class="card me-3 text-center" style="width: 18rem;">
+                                    <img src="https://source.unsplash.com/300x200/?toy"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Fun Toy Car</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">A fun toy car for adventurous kids.</p>
+
+                                        <button onclick="addToCart(large_p_1)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_2" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="  https://source.unsplash.com/300x200/?kids-building-blocks"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Colorful Building Blocks</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">A set of colorful building blocks for creative playtime.
+                                        </p>
+                                        <button onclick="addToCart(large_p_2)" class=" mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_3" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://source.unsplash.com/300x200/?educational-game"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Educational Puzzle</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">An educational puzzle game for young lmt-auto earners.</p>
+                                        <button onclick="addToCart(large_p_3)" class=" mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_4" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src=" https://source.unsplash.com/300x200/?plush-toy"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Soft Plush Toy</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">A soft and cuddly plush toy for kids to snuggle with.</p>
+                                        <button onclick="addToCart(large_p_4)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_5" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src=" https://source.unsplash.com/300x200/?puzzles"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Interactive Learning Pad</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">An interactive learning pad for kids to explore and learn.
+                                        </p>
+                                        <button onclick="addToCart(large_p_5)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <!-- Continue adding more cards here -->
+                                <div id="large_p_6" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://source.unsplash.com/300x200/?dolls"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">B-Toys</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up </p>
+                                        <button onclick="addToCart(large_p_6)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_7" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://source.unsplas d-flex flex-columnh.com/300x200/?stuffed-animals"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Smarty Ani</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on thmt-auto e card title
+                                            and make up </p>
+                                        <button onclick="addToCart(large_p_7)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_8" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://source.unsplash.com/300x200/?wooden-toys"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Wooden Toys</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up </p>
+                                        <button onclick="addToCart(large_p_8)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_9" class="card me-3  text-center" style="width: 18rem;">
+                                    <img src="https://source.unsplash.com/300x200/?children-games"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Child Games</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up </p>
+                                        <button onclick="addToCart(large_p_9)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="large_p_10" class="card me-3 text-center" style="width: 18rem;">
+                                    <img src=" https://source.unsplash.com/300x200/?action-figures"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Action Games</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up </p>
+                                        <button onclick="addToCart(large_p_10)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more carousel items if needed -->
+                    </div>
+                    <!-- Add carousel controls if needed -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab size -->
+            <div class="container mb-5 d-none d-md-block d-lg-none">
+                <div id="carouselTab" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <div id="tab_p_01" class="card me-3 text-center" style="width: 18rem;">
+                                    <img src="https://source.unsplash.com/300x200/?plush-toy"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Plush Toy</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">A cute plush toy for kids to cuddle with.</p>
+                                        <button onclick="addToCart(tab_p_01)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="tab_p_02" class="card me-3 text-center" style="width: 18rem;">
+                                    <img src="https://source.unsplash.com/300x200/?educational-game"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Educational Game</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">An educational game for fun learning.</p>
+                                        <button onclick="addToCart(tab_p_02)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div id="tab_p_03" class="card me-3 text-center" style="width: 18rem;">
+                                    <img src="https://source.unsplash.com/300x200/?kids-building-blocks"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Kids Building Blocks</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Colorful building blocks for creative playtime.</p>
+                                        <button onclick="addToCart(tab_p_03)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="tab_p_04" class="card me-3 text-center" style="width: 18rem;">
+                                    <img src="https://source.unsplash.com/300x200/?toy-cars"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Toy Cars</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Toy cars for little speedsters.</p>
+                                        <button onclick="addToCart(tab_p_04)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div id="tab_p_05" class="card me-3 text-center" style="width: 18rem;">
+                                    <img src="https://source.unsplash.com/300x200/?dolls"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Dolls</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Cute dolls for imaginative play.</p>
+                                        <button onclick="addToCart(tab_p_05)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="tab_p_06" class="card me-3 text-center" style="width: 18rem;">
+                                    <img src="https://source.unsplash.com/300x200/?wooden-toys"
+                                        class="d-block card-img-top img-100" alt="product image">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title product-title">Wooden Toys</h5>
+                                        <h6 class="card-title product-price">&#8377; 100</h6>
+                                        <p class="card-text">Eco-friendly wooden toys for safe play.</p>
+                                        <button onclick="addToCart(tab_p_06)" class="mt-auto btn btn-primary">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more carousel items if needed -->
+                    </div>
+                    <!-- Add carousel controls if needed -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTab"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTab"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Mobile screen -->
+            <div class="container d-md-none">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="carouselMobile" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="d-flex">
+                                        <div id="mob_p_01" class="card me-3 text-center" style="width: 100%;">
+                                            <img src="https://source.unsplash.com/300x200/?plush-toy"
+                                                class="d-block card-img-top img-100" alt="product image">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title product-title">Plush Toy</h5>
+                                                <h6 class="card-title product-price">&#8377; 100</h6>
+                                                <p class="card-text">A cute plush toy for kids to cuddle with.</p>
+                                                <button onclick="addToCart(mob_p_01)" class="mt-auto btn btn-primary">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex">
+                                        <div id="mob_p_02" class="card me-3 text-center" style="width: 100%;">
+                                            <img src="https://source.unsplash.com/300x200/?educational-game"
+                                                class="d-block card-img-top img-100" alt="product image">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title product-title">Educational Game</h5>
+                                                <h6 class="card-title product-price">&#8377; 100</h6>
+                                                <p class="card-text">An educational game for fun learning.</p>
+                                                <button onclick="addToCart(mob_p_02)" class="mt-auto btn btn-primary">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex">
+                                        <div id="mob_p_03" class="card me-3 text-center" style="width: 100%;">
+                                            <img src="https://source.unsplash.com/300x200/?kids-building-blocks"
+                                                class="d-block card-img-top img-100" alt="product image">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title product-title">Kids Building Blocks</h5>
+                                                <h6 class="card-title product-price">&#8377; 100</h6>
+                                                <p class="card-text">Colorful building blocks for creative playtime.</p>
+                                                <button onclick="addToCart(mob_p_03)" class="mt-auto btn btn-primary">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex">
+                                        <div id="mob_p_04" class="card me-3 text-center" style="width: 100%;">
+                                            <img src="https://source.unsplash.com/300x200/?toy-cars"
+                                                class="d-block card-img-top img-100" alt="product image">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title product-title">Toy Cars</h5>
+                                                <h6 class="card-title product-price">&#8377; 100</h6>
+                                                <p class="card-text">Toy cars for little speedsters.</p>
+                                                <button onclick="addToCart(mob_p_04)" class="mt-auto btn btn-primary">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex">
+                                        <div id="mob_p_05" class="card me-3 text-center" style="width: 100%;">
+                                            <img src="https://source.unsplash.com/300x200/?dolls"
+                                                class="d-block card-img-top img-100" alt="product image">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title product-title">Dolls</h5>
+                                                <h6 class="card-title product-price">&#8377; 100</h6>
+                                                <p class="card-text">Cute dolls for imaginative play.</p>
+                                                <button onclick="addToCart(mob_p_05)" class="mt-auto btn btn-primary">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex">
+                                        <div id="mob_p_06" class="card me-3 text-center" style="width: 100%;">
+                                            <img src="https://source.unsplash.com/300x200/?wooden-toys"
+                                                class="d-block card-img-top img-100" alt="product image">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title product-title">Wooden Toys</h5>
+                                                <h6 class="card-title product-price">&#8377; 100</h6>
+                                                <p class="card-text">Eco-friendly wooden toys for safe play.</p>
+                                                <button onclick="addToCart(mob_p_06)" class="mt-auto btn btn-primary">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add carousel controls if needed -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <div class="container-fluid row bg-dark text-white  bottom-0 text-center m-0" id="footer"></div>
+
+    <!-- bootstrap js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/00ae993e42.js" crossorigin="anonymous"></script>
+
+    <!--include commonScript.js  file -->
+    <script src="../../js/commonScript.js"></script>
+    <script>
+        getHeader('header');
+        getFooter('footer');
+    </script>
+</body>
+
+</html>
